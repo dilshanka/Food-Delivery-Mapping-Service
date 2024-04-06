@@ -6,16 +6,16 @@ import {
   Heading,
   Input,
   Stack,
-  Text,
+ 
 } from '@chakra-ui/react';
-import { MdLocalShipping } from 'react-icons/md';
+// import { MdLocalShipping } from 'react-icons/md';
 
 function Delivery() {
   return (
     <Flex
       justifyContent="center"
       alignItems="center"
-      height="420px"
+      height="500px"
       maxWidth="800px"
       mx="auto"
       bgGradient="linear(to-r, teal.500, green.500)"
@@ -25,7 +25,6 @@ function Delivery() {
       <Stack spacing="4" direction="row" alignItems="center">
         <Box textAlign="center">
           
-       
          
         </Box>
         <Box flex="1">
