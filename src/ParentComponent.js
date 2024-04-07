@@ -1,21 +1,30 @@
-import React from 'react';
-import AddressComponent from './AddressComponent'; // Import the AddressComponent
-import MapComponent from './MapComponent'; // Assuming you have a MapComponent
+import React, { useState } from 'react';
+import AddressComponent from './AddressComponent';
+import MapComponent from './MapComponent';
 
-function ParentComponent() {
-  // Define the latitude and longitude
-  const latitude = 45.7128; // Example latitude
-  const longitude = -74.0060; // Example longitude
+function ParentComponent(props) {
+
+  
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
+
+ 
+ 
+
+ 
+
+  
 
   return (
     <div>
-      {/* Render the MapComponent and pass the coordinates */}
-      <MapComponent lat={latitude} lng={longitude} />
+      {/* Render the MapComponent and pass the onCoordinatesChange function */}
+      <MapComponent />
       {/* Render the AddressComponent and pass the same coordinates */}
-      <AddressComponent lat={latitude} lng={longitude} />
+      {latitude !== null && longitude !== null && (
+        <AddressComponent lat={props.latitude} lng={props.longitude} />
+      )}
     </div>
   );
 }
 
 export default ParentComponent;
-

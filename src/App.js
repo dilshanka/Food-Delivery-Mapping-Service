@@ -30,7 +30,7 @@ function App() {
         </GridItem>
 
         <GridItem colSpan={1} w="100%" h="500px" bg="blue.500">
-          <MapComponent  />
+          <MapComponent onCoordinatesChange={handleAddressChange} />
         </GridItem>
 
         <GridItem colSpan={1} w="100%" h="250px">
