@@ -5,8 +5,8 @@ import MapComponent from './MapComponent';
 function ParentComponent(props) {
 
   
-  const [latitude, setLatitude] = useState(null);
-  const [longitude, setLongitude] = useState(null);
+  const [latitude, setLatitude] = useState("6.007301276220637");
+  const [longitude, setLongitude] = useState("80.51936193680524");
 
  
  

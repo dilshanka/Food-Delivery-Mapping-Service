@@ -49,8 +49,8 @@ function MapComponent({ }) {
       >
         {center && <Marker position={center} />}
       </GoogleMap>
-      {/* <ParentComponent latitude={center.lat} longitude={center.lng} />
-     */}
+      {/* <ParentComponent latitude={center.lat} longitude={center.lng} /> */}
+    
      
 
  
