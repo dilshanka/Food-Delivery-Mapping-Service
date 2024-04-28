@@ -21,7 +21,7 @@ function ParentComponent(props) {
       <MapComponent />
       {/* Render the AddressComponent and pass the same coordinates */}
       {latitude !== null && longitude !== null && (
-        <AddressComponent lat={props.latitude} lng={props.longitude} />
+        <AddressComponent lat={latitude} lng={longitude} />
       )}
     </div>
   );
